@@ -21,6 +21,7 @@ public class ObstacleManager : Singleton<ObstacleManager>
     {
         for (int i = 0; i < obstaclesPool.Length; i++)
         {
+
             obstaclesPool[i].obstacleQueue = new Queue<GameObject>();
 
             for (int j = 0; j < obstaclesPool[i].objectSize; j++)

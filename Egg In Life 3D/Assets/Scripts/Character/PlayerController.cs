@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerController : Singleton<PlayerController>
 {
     private Animator _animator;
-
+    public string animationName;
 
     void Start()
     {
@@ -14,14 +14,11 @@ public class PlayerController : Singleton<PlayerController>
     }
     private void Update()
     {
-        if (UIManager.Instance.animatorTime.normalizedValue > .5f)
-        {
-            _animator.Play("Dancing", -1, UIManager.Instance.animatorTime.normalizedValue * 2);
-        }
-        else
-        {
-            _animator.Play("Dance", -1, UIManager.Instance.animatorTime.normalizedValue * 2);
-        }
-        
+
+        _animator.Play(animationName, 0, UIManager.Instance.animatorTime.normalizedValue );
+
+
+
+
     }
 }
