@@ -5,5 +5,5 @@ using UnityEngine;
 public class GameSettings : ScriptableObject
 {
     public float spawnTime;
-
+    public int totalObstacleInRaund;
 }
