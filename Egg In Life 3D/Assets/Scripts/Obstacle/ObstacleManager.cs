@@ -33,10 +33,7 @@ public class ObstacleManager : Singleton<ObstacleManager>
         }
     }
 
-    private void Start()
-    {
-        StartCoroutine(SpawnObstacle());
-    }
+    
 
     public GameObject GetObstacle(int value)
     {
@@ -51,6 +48,11 @@ public class ObstacleManager : Singleton<ObstacleManager>
 
         obstaclesPool[value].obstacleQueue.Enqueue(obstacle);
         return obstacle;
+    }
+
+    public void StartSpawnObstacle()
+    {
+        StartCoroutine(SpawnObstacle());
     }
 
     IEnumerator SpawnObstacle()

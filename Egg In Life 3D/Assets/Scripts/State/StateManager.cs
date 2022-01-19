@@ -2,17 +2,23 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class StateManager : MonoBehaviour
+public enum State
 {
-    // Start is called before the first frame update
-    void Start()
+    MainMenu,
+    InGame,
+    GameOver,
+    EndGame
+}
+
+public class StateManager : Singleton<StateManager>
+{
+    [HideInInspector]
+    public State state;
+
+    private void Start()
     {
-        
+        state = State.MainMenu;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+
 }
