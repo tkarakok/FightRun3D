@@ -1,2 +1,24 @@
-# EggInLife3D
- new Project
+
+# FIGHT RUN 3D
+
+MY NEW PROJECT I TRYED MYSELF
+
+
+
+## GAMEPLAY VIDEO
+
+
+[![IMAGE ALT TEXT HERE](https://i.imgur.com/h3od9kS.png)](https://youtu.be/28B8-ICrueA)
+
+
+
+
+## WHAT I USE IN THE PROJECT
+
+**ENGINE:** UNITY 3D
+
+**LANGUAGE:** C#
+
+**ASSETS:** UNITY ASSET STORE
+
+  
